@@ -1,1 +1,256 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fffdf7">
+<meta name="description" content="VIHA Group of Constructions — quality-led construction, practical experience, and lasting value since 2009.">
+<title>VIHA Group of Constructions | Built on Trust</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:#fffdf7;
+  --white:#fff;
+  --navy:#19324d;
+  --green:#356b50;
+  --green2:#254c3a;
+  --gold:#c49a45;
+  --gold2:#e8cf94;
+  --muted:#68766f;
+  --line:#e5e0d5;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'DM Sans',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--sans);background:var(--cream);color:var(--navy);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.container{width:min(1180px,90%);margin:auto}
+.section{padding:90px 0}
+.eyebrow{color:var(--gold);font-size:10px;letter-spacing:2.5px;font-weight:800;text-transform:uppercase}
+.heading{font:400 clamp(36px,5vw,64px)/1.08 var(--serif);margin-top:16px;letter-spacing:-1px}
+.heading em{color:var(--green)}
+.copy{color:var(--muted);font-size:14px;line-height:1.9;margin-top:18px;max-width:680px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 22px;border:1px solid var(--gold);font-size:10px;font-weight:800;letter-spacing:1px;transition:.25s}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-light{background:#fff;color:var(--navy);border-color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.nav{position:absolute;z-index:10;top:0;left:0;width:100%;height:88px;background:#fffdf7ed;border-bottom:1px solid var(--line);transition:.25s}
+.nav.scrolled{position:fixed;box-shadow:0 5px 25px #19324d12;backdrop-filter:blur(12px)}
+.nav-inner{height:100%;width:92%;max-width:1380px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:9px}
+.brand img{width:58px;height:58px;object-fit:contain}
+.brand strong{display:block;color:var(--green2);font:700 25px var(--serif);letter-spacing:1px}
+.brand small{font-size:8px;font-weight:800;letter-spacing:1px}
+.nav-links{display:flex;align-items:center;gap:20px;list-style:none}
+.nav-links a{font-size:10px;font-weight:800}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{border:1px solid var(--gold);padding:12px 15px}
+.menu{display:none;background:#fff;border:1px solid var(--line);padding:9px 12px;color:var(--navy)}
+.hero{min-height:760px;height:100svh;max-height:1000px;position:relative;display:flex;align-items:center;overflow:hidden;background:#eaf1e8;padding-top:80px}
+.hero-bg{position:absolute;inset:0;overflow:hidden}
+.hero-video{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;opacity:.38;transform:scale(1.04);animation:zoom 22s ease-in-out infinite alternate}
+.hero-wash{position:absolute;inset:0;background:linear-gradient(90deg,#fffdf7fa 0%,#fffdf7ed 38%,#fffdf7b8 68%,#fffdf72e 100%)}
+.hero-content{position:relative;z-index:2;width:min(1180px,90%);margin:0 auto;padding-right:clamp(250px,32vw,420px)}
+.kicker{color:var(--green);font-size:10px;letter-spacing:2px;font-weight:800}
+.hero h1{font:400 clamp(48px,7.2vw,94px)/1 var(--serif);letter-spacing:-2px;margin-top:24px;max-width:720px}
+.hero h1 em{color:var(--green)}
+.hero-copy{max-width:510px;color:#4d5e58;font-size:14px;line-height:1.9;margin-top:22px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:25px;margin-top:34px}
+.stat{border-left:1px solid var(--gold);padding-left:12px}
+.stat strong{display:block;font:400 25px var(--serif);color:var(--green)}
+.stat small{font-size:9px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.hero-founder{position:absolute;z-index:2;right:max(5%,calc((100% - 1180px)/2));bottom:42px;width:clamp(230px,28vw,360px);height:min(68vh,590px);border:6px solid white;border-radius:180px 180px 14px 14px;overflow:hidden;box-shadow:0 20px 55px #19324d22;background:#ded6cb}
+.hero-founder img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-bottom{position:absolute;bottom:18px;left:5%;right:5%;z-index:3;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1.5px;color:#52665a}
+@keyframes zoom{from{transform:scale(1.04)}to{transform:scale(1.13)}}
+.ribbon{background:var(--green);color:white}
+.ribbon-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.ribbon-item{padding:25px;display:flex;align-items:center;gap:15px;border-right:1px solid #ffffff2b}
+.ribbon-item:last-child{border:0}
+.ribbon-item strong{font:400 34px var(--serif);color:var(--gold2)}
+.ribbon-item b{font-size:10px;letter-spacing:1px}
+.ribbon-item small{display:block;color:#ffffffc9;font-size:10px;line-height:1.7;margin-top:5px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.photo-frame{position:relative;padding:0 25px 25px 0}
+.photo-frame img{width:100%;max-height:500px;object-fit:cover}
+.photo-frame:after{content:'';position:absolute;inset:18px 10px 10px 18px;border:1px solid var(--gold);z-index:-1}
+.since{position:absolute;right:0;bottom:0;background:white;padding:18px 22px;border-top:3px solid var(--gold);box-shadow:0 8px 25px #19324d12}
+.since strong{font:400 28px var(--serif);color:var(--green)}
+.since small{display:block;font-size:10px;color:var(--muted)}
+.journey,.projects{background:#eef3eb}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}
+.section-head .copy{max-width:420px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:27px;background:#fff;border:1px solid var(--line)}
+.card .year{font:400 38px var(--serif);color:var(--gold)}
+.card h3{font-size:16px;margin:15px 0 9px}
+.card p{font-size:12px;color:var(--muted);line-height:1.8}
+.card.featured{background:var(--green);color:white}
+.card.featured p{color:#ffffffc7}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+.service{padding:24px;background:white;border:1px solid var(--line);min-height:150px}
+.service span{font-size:22px;color:var(--gold)}
+.service h3{font-size:14px;margin-top:17px}
+.service p{font-size:11px;color:var(--muted);line-height:1.7;margin-top:8px}
+.services-banner{margin-top:28px;padding:10px;border:1px solid var(--line);background:white}
+.services-banner img{width:100%;max-height:360px;object-fit:contain}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+.gallery figure{background:white;border:1px solid var(--line);padding:10px}
+.gallery img{width:100%;height:330px;object-fit:cover}
+.gallery figcaption{padding:15px 8px 8px}
+.gallery strong{font:400 22px var(--serif)}
+.gallery p{font-size:11px;color:var(--muted);margin-top:6px}
+.founder{background:#eaf1e8}
+.founder-photo{max-height:570px;overflow:hidden;border:8px solid white;box-shadow:0 18px 45px #19324d15}
+.founder-photo img{width:100%;height:570px;object-fit:cover;object-position:center top}
+.signature{font:italic 17px var(--serif);color:var(--green);margin-top:24px}
+.strengths{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+.strength{background:white;border:1px solid var(--line);padding:24px}
+.strength span{color:var(--gold);font-size:22px}
+.strength h3{font-size:14px;margin:12px 0 8px}
+.strength p{font-size:12px;color:var(--muted);line-height:1.8}
+.vision{background:var(--green);color:white}
+.vision .heading em{color:var(--gold2)}
+.vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+.vision-card{padding:28px;border:1px solid #ffffff40;background:#ffffff0c}
+.vision-card h3{font:400 25px var(--serif);color:var(--gold2)}
+.vision-card p{font-size:13px;line-height:1.9;color:#ffffffd2;margin-top:12px}
+.clients{background:#fff}
+.client-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:30px}
+.client{min-height:165px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;background:#fff;transition:background .2s}
+.client:hover{background:#f5f7f1}
+.client-mark{width:58px;height:48px;object-fit:contain}
+.client-wordmark{font-weight:800;font-size:23px;letter-spacing:1px;color:var(--green)}
+.client-wordmark small{display:block;font-size:9px;letter-spacing:2px;text-align:center;margin-top:5px;color:var(--muted)}
+.jmc{color:#19324d}.lt{color:#bd3442}.nambiar{color:#6c572b}.indhya{color:#356b50}.svamitva{color:#356b50}.mfar{color:#234c68}.blk{color:#9d3041}.kpc{color:#234c68}
+.client-note{font-size:11px;line-height:1.8;color:var(--muted);margin-top:15px}
+.contact{background:#eef3eb}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.contact-details{display:grid;gap:18px;align-content:center}
+.contact-row{display:flex;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.contact-icon{width:38px;height:38px;display:grid;place-items:center;background:white;color:var(--green);border:1px solid var(--line);flex-shrink:0}
+.contact-row small{display:block;color:var(--muted);font-size:10px;letter-spacing:1px;margin-bottom:6px}
+.contact-row a,.contact-row p{font-size:13px;overflow-wrap:anywhere}
+.footer{background:#19324d;color:white;padding:35px 0 20px}
+.footer-main{display:flex;justify-content:space-between;gap:25px;align-items:center}
+.footer-brand{font:400 20px var(--serif)}
+.footer-brand small{display:block;font:800 9px var(--sans);letter-spacing:1.5px;color:var(--gold2);margin-top:6px}
+.footer-links{display:flex;flex-wrap:wrap;gap:17px}
+.footer-links a{font-size:10px;color:#ffffffc7}
+.footer-bottom{border-top:1px solid #ffffff28;margin-top:25px;padding-top:18px;display:flex;justify-content:space-between;gap:15px;font-size:10px;color:#ffffffa8}
+.credit{color:var(--gold2)}
+@media(max-width:900px){.nav-links{gap:12px}.nav-links a{font-size:9px}.brand img{width:46px;height:46px}.brand strong{font-size:21px}.two-col{gap:35px}.service-grid{grid-template-columns:repeat(2,1fr)}.client-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){
+.nav{height:76px}.brand img{width:43px;height:43px}.brand strong{font-size:20px}.brand small{font-size:7px}
+.menu{display:block;position:relative;z-index:12}
+.nav-links{display:none;position:absolute;top:75px;left:0;right:0;background:var(--cream);padding:18px 5%;border-bottom:1px solid var(--line);align-items:stretch;gap:0;box-shadow:0 12px 25px #19324d12}
+.nav-links.open{display:flex;flex-direction:column}.nav-links li a{display:block;padding:13px 0;font-size:12px}.nav-cta{border:0;padding:13px 0}
+.hero{height:auto;min-height:900px;max-height:none;align-items:flex-start;padding-top:115px;padding-bottom:280px}
+.hero-content{padding-right:0;margin:auto}.hero h1{font-size:clamp(44px,12vw,68px);letter-spacing:-1.5px}
+.hero-founder{width:165px;height:225px;right:5%;bottom:55px;border-width:4px}
+.hero-wash{background:linear-gradient(180deg,#fffdf7f5 0%,#fffdf7e8 54%,#fffdf78a 100%)}
+.hero-bottom{font-size:8px;bottom:17px}.hero-stats{gap:14px}
+.ribbon-grid{grid-template-columns:1fr}.ribbon-item{border-right:0;border-bottom:1px solid #ffffff25;padding:18px}
+.section{padding:65px 0}.two-col,.contact-grid{grid-template-columns:1fr;gap:35px}
+.section-head{display:block}.cards{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr 1fr}
+.gallery{grid-template-columns:1fr}.gallery img{height:260px}.founder-photo img{height:420px}
+.strengths{grid-template-columns:1fr 1fr}.vision-grid{grid-template-columns:1fr}
+.client{min-height:135px;padding:12px}.client-wordmark{font-size:19px}
+.footer-main,.footer-bottom{display:block}.footer-links{margin-top:20px}.footer-bottom p+p{margin-top:10px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav" id="nav">
+<div class="nav-inner">
+<a class="brand" href="#home"><img src="assets/viha-logo.png" alt="VIHA logo"><span><strong>VIHA</strong><small>GROUP OF CONSTRUCTIONS</small></span></a>
+<button class="menu" id="menu" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">HOME</a></li><li><a href="#about">ABOUT</a></li><li><a href="#journey">JOURNEY</a></li><li><a href="#services">SERVICES</a></li><li><a href="#projects">PROJECTS</a></li><li><a href="#founder">FOUNDER</a></li><li><a href="#clients">CLIENTS</a></li><li><a class="nav-cta" href="#contact">CONTACT ↗</a></li>
+</ul>
+</div>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="hero-bg"><video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg"><source src="assets/construction-hero.mp4" type="video/mp4"></video></div>
+<div class="hero-wash"></div>
+<div class="hero-content">
+<div class="kicker">QUALITY • EXECUTION • TRUST</div>
+<h1>Building tomorrow.<br><em>Engineering excellence.</em></h1>
+<p class="hero-copy">Delivering quality construction, innovative engineering and reliable infrastructure solutions that shape a better future.</p>
+<div class="hero-actions"><a class="btn btn-gold" href="#projects">EXPLORE PROJECTS ↗</a><a class="btn btn-light" href="#contact">CONTACT OUR TEAM</a></div>
+<div class="hero-stats"><div class="stat"><strong>2009</strong><small>Our beginnings</small></div><div class="stat"><strong>Quality</strong><small>Our commitment</small></div><div class="stat"><strong>VIHA</strong><small>Built on experience</small></div></div>
+</div>
+<div class="hero-founder"><img src="assets/founder-portrait.jpg" alt="Founder portrait"></div>
+<div class="hero-bottom"><span>VIHA GROUP OF CONSTRUCTIONS</span><a href="#about">SCROLL TO DISCOVER ↓</a></div>
+</section>
+<section class="ribbon"><div class="container ribbon-grid">
+<div class="ribbon-item"><strong>2009</strong><div><b>OUR BEGINNINGS</b><small>A journey grounded in practical construction experience.</small></div></div>
+<div class="ribbon-item"><strong>01</strong><div><b>ONE COMMITMENT</b><small>Quality in workmanship and execution.</small></div></div>
+<div class="ribbon-item"><strong>∞</strong><div><b>LASTING VALUE</b><small>Relationships built on trust and reliability.</small></div></div>
+</div></section>
+<section class="section" id="about"><div class="container two-col">
+<div class="photo-frame"><img src="assets/building-exterior.jpg" alt="Building exterior surrounded by trees"><div class="since"><strong>Since 2009</strong><small>Experience that shapes every step.</small></div></div>
+<div><div class="eyebrow">Who we are</div><h2 class="heading">A strong foundation.<br><em>A vision for tomorrow.</em></h2><p class="copy">VIHA Group of Constructions is built on practical industry experience, a quality-first mindset and a commitment to dependable execution. Our journey reflects steady growth, hands-on knowledge and a focus on lasting value.</p><p class="copy">From coordination and workmanship to professional project execution, we aim to build with care, integrity and responsibility.</p><a class="btn btn-gold" style="margin-top:24px" href="#services">DISCOVER OUR SERVICES ↗</a></div>
+</div></section>
+<section class="section journey" id="journey"><div class="container">
+<div class="section-head"><div><div class="eyebrow">Our journey</div><h2 class="heading">Built step by step.<br><em>Growing with purpose.</em></h2></div><p class="copy">A construction journey shaped by hands-on experience, responsibility and an ongoing commitment to improve.</p></div>
+<div class="cards"><article class="card"><div class="year">2009</div><h3>Practical Beginnings</h3><p>The professional journey began with hands-on labour contracting and on-site experience.</p></article><article class="card featured"><div class="year">Growth</div><h3>Material Contracting</h3><p>Growing responsibilities expanded experience in materials, coordination and construction delivery.</p></article><article class="card"><div class="year">VIHA</div><h3>Building the Future</h3><p>Establishing VIHA Group of Constructions with a focus on quality, trust and dependable execution.</p></article></div>
+</div></section>
+<section class="section" id="services"><div class="container">
+<div class="eyebrow">What we do</div><h2 class="heading">Construction solutions.<br><em>Built around your needs.</em></h2><p class="copy">Our service areas span construction and infrastructure support. Project scope and availability are confirmed during consultation.</p>
+<div class="service-grid">
+<article class="service"><span>⌂</span><h3>Residential Construction</h3><p>Homes and residential building works.</p></article>
+<article class="service"><span>▦</span><h3>Commercial Buildings</h3><p>Commercial spaces and building execution.</p></article>
+<article class="service"><span>⌁</span><h3>Roads & Infrastructure</h3><p>Infrastructure and civil construction works.</p></article>
+<article class="service"><span>◇</span><h3>Industrial Projects</h3><p>Industrial construction support and coordination.</p></article>
+<article class="service"><span>↗</span><h3>Project Management</h3><p>Planning, coordination and site execution support.</p></article>
+<article class="service"><span>⚒</span><h3>Engineering Solutions</h3><p>Practical construction problem-solving.</p></article>
+<article class="service"><span>✓</span><h3>Quality & Safety</h3><p>Emphasis on responsible and quality-focused work.</p></article>
+<article class="service"><span>◷</span><h3>Execution Support</h3><p>Workmanship, timelines and team coordination.</p></article>
+</div>
+<div class="services-banner"><img src="assets/services-banner.jpg" alt="VIHA Group of Constructions services banner"></div>
+</div></section>
+<section class="section projects" id="projects"><div class="container">
+<div class="section-head"><div><div class="eyebrow">Selected work</div><h2 class="heading">Progress you can see.<br><em>Quality that lasts.</em></h2></div><p class="copy">A look at building imagery supplied for the VIHA website. Add verified project names and details when ready.</p></div>
+<div class="gallery"><figure><img src="assets/building-exterior.jpg" alt="Building exterior project photo"><figcaption><strong>Building Exterior</strong><p>Exterior view · supplied project image</p></figcaption></figure><figure><img src="assets/before-after.jpg" alt="Building construction progress before and after completion"><figcaption><strong>Before & After</strong><p>Construction progress and completed building comparison</p></figcaption></figure></div>
+</div></section>
+<section class="section founder" id="founder"><div class="container two-col">
+<div class="founder-photo"><img src="assets/founder-portrait.jpg" alt="Founder of VIHA Group of Constructions"></div>
+<div><div class="eyebrow">Leadership & vision</div><h2 class="heading">Experience that<br><em>builds a vision.</em></h2><p class="copy">With a construction industry journey dating back to 2009, founder Mr. Balu Challa has developed practical experience across labour contracting, material contracting and construction execution.</p><p class="copy">His journey reflects dedication and a vision to build a company founded on quality, trust, teamwork and professional excellence.</p><div style="font-weight:800;letter-spacing:1px;margin-top:22px">MR. BALU CHALLA</div><div style="font-size:11px;color:var(--muted);margin-top:6px">Founder — VIHA Group of Constructions</div><div class="signature">Our journey. Our experience. Our commitment.</div></div>
+</div></section>
+<section class="section" id="strengths"><div class="container">
+<div class="eyebrow">The foundation of our work</div><h2 class="heading">What defines <em>us.</em></h2><p class="copy">Our approach is shaped by practical experience, careful coordination and responsible professional construction.</p>
+<div class="strengths"><article class="strength"><span>◷</span><h3>Industry Experience</h3><p>A construction industry journey beginning in 2009, built through hands-on work.</p></article><article class="strength"><span>⌂</span><h3>Construction Expertise</h3><p>Experience across contracting, materials and construction execution.</p></article><article class="strength"><span>✧</span><h3>Quality Commitment</h3><p>Focus on workmanship, materials and execution standards.</p></article><article class="strength"><span>▦</span><h3>Professional Management</h3><p>Emphasis on planning, coordination, safety and timely execution.</p></article><article class="strength"><span>◎</span><h3>Client Relationships</h3><p>Building trust through transparency and reliable performance.</p></article><article class="strength"><span>↗</span><h3>Continuous Growth</h3><p>Improving capabilities and pursuing dependable construction solutions.</p></article></div>
+</div></section>
+<section class="section vision"><div class="container"><div class="eyebrow" style="color:var(--gold2)">Our direction</div><h2 class="heading">Guided by purpose.<br><em>Grounded in quality.</em></h2><div class="vision-grid"><article class="vision-card"><h3>Our Vision</h3><p>To establish VIHA Group of Constructions as a trusted name in the construction industry by delivering quality-driven projects, maintaining professional standards and creating long-term value for clients.</p></article><article class="vision-card"><h3>Our Mission</h3><p>To execute every project with integrity, quality, safety and efficiency while continuously improving our capabilities and delivering dependable construction solutions.</p></article></div></div></section>
+<section class="section clients" id="clients"><div class="container"><div class="eyebrow">Our client relationships</div><h2 class="heading">Our <em>clients.</em></h2><p class="copy">Logos and company names below are included as requested. Use official brand artwork only where you have permission and a confirmed client relationship.</p>
+<div class="client-grid">
+<a class="client" href="https://www.jmcprojects.com/" target="_blank" rel="noopener"><img class="client-mark" src="https://www.google.com/s2/favicons?domain=jmcprojects.com&sz=128" alt="JMC icon"><span class="client-wordmark jmc">JMC<small>PROJECTS</small></span></a>
+<a class="client" href="https://www.larsentoubro.com/" target="_blank" rel="noopener"><img class="client-mark" src="https://investors.larsentoubro.com/images/Logo-new.png" alt="L&T logo"><span class="client-wordmark lt">L&amp;T<small>LARSEN &amp; TOUBRO</small></span></a>
+<a class="client" href="https://nambiarbuilders.com/" target="_blank" rel="noopener"><img class="client-mark" src="https://www.google.com/s2/favicons?domain=nambiarbuilders.com&sz=128" alt="Nambiar icon"><span class="client-wordmark nambiar">NAMBIAR<small>BUILDERS</small></span></a>
+<a class="client" href="https://indhyaestate.com/" target="_blank" rel="noopener"><img class="client-mark" src="https://www.google.com/s2/favicons?domain=indhyaestate.com&sz=128" alt="Indhya icon"><span class="client-wordmark indhya">INDHYA<small>ESTATE</small></span></a>
+<a class="client" href="https://svamitva.com/logo/" target="_blank" rel="noopener"><img class="client-mark" src="https://www.google.com/s2/favicons?domain=svamitva.com&sz=128" alt="Svamitva icon"><span class="client-wordmark svamitva">SVAMITVA<small>LAND MARKS</small></span></a>
+<a class="client" href="https://www.mfar.com/" target="_blank" rel="noopener"><img class="client-mark" src="https://www.google.com/s2/favicons?domain=www.mfar.com&sz=128" alt="MFAR icon"><span class="client-wordmark mfar">MFAR</span></a>
+<a class="client" href="https://www.blkashyap.com/" target="_blank" rel="noopener"><img class="client-mark" src="https://www.google.com/s2/favicons?domain=www.blkashyap.com&sz=128" alt="BLK icon"><span class="client-wordmark blk">BLK<small>B. L. KASHYAP</small></span></a>
+<a class="client" href="https://kpc.co/" target="_blank" rel="noopener"><img class="client-mark" src="https://www.google.com/s2/favicons?domain=kpc.co&sz=128" alt="KPC icon"><span class="client-wordmark kpc">KPC<small>PROJECTS</small></span></a>
+</div><p class="client-note">Some marks may be website icons rather than full-resolution official logo artwork. Company names and trademarks belong to their respective owners.</p>
+</div></section>
+<section class="section contact" id="contact"><div class="container contact-grid"><div><div class="eyebrow">Let's connect</div><h2 class="heading">Building trust.<br><em>Creating value.</em></h2><p class="copy">Reach out to VIHA Group of Constructions for construction enquiries, business discussions and opportunities to work together.</p><a class="btn btn-gold" style="margin-top:25px" href="mailto:vihagroupofconstructions@gmail.com?subject=Construction%20Enquiry">SEND AN ENQUIRY ↗</a></div><div class="contact-details"><div class="contact-row"><div class="contact-icon">✉</div><div><small>Email address</small><a href="mailto:vihagroupofconstructions@gmail.com">vihagroupofconstructions@gmail.com</a></div></div><div class="contact-row"><div class="contact-icon">◎</div><div><small>Instagram</small><a href="https://www.instagram.com/vihagroup/?vrfl=OGk3YnIwejg5NG01" target="_blank" rel="noopener">@vihagroup — Visit our page ↗</a></div></div><div class="contact-row"><div class="contact-icon">⌂</div><div><small>Company</small><p>VIHA Group of Constructions</p></div></div><div class="contact-row"><div class="contact-icon">✧</div><div><small>Our identity</small><p>Quality our identity.</p></div></div></div></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-main"><a class="footer-brand" href="#home">VIHA GROUP OF CONSTRUCTIONS<small>QUALITY OUR IDENTITY.</small></a><nav class="footer-links"><a href="#home">Home</a><a href="#about">About</a><a href="#journey">Journey</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#founder">Founder</a><a href="#clients">Clients</a><a href="#contact">Contact</a></nav></div><div class="footer-bottom"><p>© <span id="year"></span> VIHA Group of Constructions. All rights reserved.</p><p class="credit">Website Designed by RAHULCHAKRI KASUKURTHI</p></div></div></footer>
+<script>
+const nav=document.getElementById('nav'),menu=document.getElementById('menu'),links=document.getElementById('navLinks');
+menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
